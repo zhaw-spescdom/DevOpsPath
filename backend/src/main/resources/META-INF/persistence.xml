@@ -17,6 +17,7 @@
 		<class>ch.zhaw.iwi.adimed.model.interactionelement.form.FormDateFieldElement</class>
 		<class>ch.zhaw.iwi.adimed.model.interactionelement.form.FormRadioButtonListElement</class>
 		<class>ch.zhaw.iwi.adimed.model.interactionelement.form.FormRadioButtonValue</class>
+		<class>ch.zhaw.iwi.adimed.model.interactionelement.form.FormSliderFieldElement</class>
 		<class>ch.zhaw.iwi.adimed.model.interactionelement.form.FormTextFieldElement</class>
 		<class>ch.zhaw.iwi.adimed.model.interactionelement.form.FormNumberFieldElement</class>
 		<class>ch.zhaw.iwi.adimed.model.interactionelement.form.FormFileUploadElement</class>
