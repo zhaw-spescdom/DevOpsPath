@@ -131,6 +131,41 @@ export class GuiModel {
                     ]
                 },
                 {
+                    "id": "StudyProgramForm",
+                    "title": "StudyProgram",
+                    "url": "/studyProgram",
+                    "formFieldList": [
+                        {
+                            "id":   "name",
+                            "type": "text",
+                            "name": "Name",
+                            "required": true,
+                            "width": 2
+                        },
+                        {
+                            "id": "description",
+                            "type": "text",
+                            "name": "Description",
+                            "newRow": true,
+                            "maxLength": 4000,
+                            "height": 4,
+                            "width": 2
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
+                {
                     "id": "PatientForm",
                     "title": "Patient",
                     "url": "/patient",
@@ -1461,60 +1496,43 @@ export class GuiModel {
                             "newRow": true
                         },
                         {
-                            "type": "list",
-                            "icon": "fa-question",
-                            "color": "wet-asphalt",
-                            "search": false,
-                            "url": "/questionnaire/patientRequired/false",
-                            "page": "nextInteractionStepPage"
-                        },
-                        {
-                            "type": "list",
-                            "icon": "fa-question",
-                            "color": "wet-asphalt",
-                            "search": false,
-                            "url": "/questionnaire/patientRequired/true",
-                            "page": "questionnairePatientsPage"
-                        },
-                        {
                             "type": "button",
-                            "name": { default: "Antworten" },
+                            "name": { default: "Studiengang" },
                             "icon": "fa-file-alt",
                             "color": "wet-asphalt",
-                            "page": "questionnaireResponsesPage",
+                            "page": "studyProgramPage",
                             "width": 2,
                             "newRow": true,
                         },
+                    ]
+                },
+                {
+                    "id": "studyProgramPage",
+                    "elementList": [
                         {
-                            "type": "pageLabel",
-                            "value": "<h4>Admin</h4>",
-                            "permissionUrl": "/permission/isAdmin",
-                            "newRow": true,
+                            "type": "backbutton",
                         },
                         {
-                            "type": "button",
-                            "name": "Patients",
+                            "type": "newButton",
+                            "name": "NewStudyProgram",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "width": 2,
+                            "form" : {
+                                "form" : "StudyProgramForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "name": "StudyProgram",
                             "icon": "fa-user",
                             "color": "wet-asphalt",
-                            "page": "patientsPage",
-                            "permissionUrl": "/permission/isAdmin",
-                        },
-                        {
-                            "type": "button",
-                            "name": "Users",
-                            "icon": "fa-user",
-                            "color": "wet-asphalt",
-                            "page": "usersPage",
-                            "permissionUrl": "/permission/isAdmin",
-                        },
-                        {
-                            "type": "button",
-                            "name": { default: "Fragebogen" },
-                            "icon": "fa-question",
-                            "color": "wet-asphalt",
-                            "page": "questionnairesPage",
-                            "permissionUrl": "/permission/isAdmin",
-                        },
+                            "search": true,
+                            "url": "/studyProgram",
+                            "form": {
+                                "form": "StudyProgramForm"
+                            }
+                        }
                     ]
                 },
                 {

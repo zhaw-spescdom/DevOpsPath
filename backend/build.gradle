@@ -23,7 +23,6 @@ task stage {
 
 sourceSets {
     main {
-        java.srcDirs += 'src/generated/java'
         resources {
             srcDirs 'src/main/resources', 'frontend'
         }
