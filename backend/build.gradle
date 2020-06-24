@@ -6,7 +6,7 @@ plugins {
 
 group = 'ch.zhaw.iwi'
 version = '0.2'
-mainClassName = 'ch.zhaw.iwi.adimed.Main'
+mainClassName = 'ch.zhaw.iwi.devops.Main'
 compileJava.options.encoding = 'UTF-8'
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
@@ -23,8 +23,9 @@ task stage {
 
 sourceSets {
     main {
+        java.srcDirs += 'src/generated/java'
         resources {
-            srcDirs "src/main/resources", "frontend"
+            srcDirs 'src/main/resources', 'frontend'
         }
     }
     generated {
@@ -37,7 +38,7 @@ sourceSets {
 tasks.build.dependsOn tasks.shadowJar
 shadowJar{
     mergeServiceFiles()
-    baseName = 'adimed-all'
+    baseName = 'devops-all'
     classifier = null
     version = null
 }

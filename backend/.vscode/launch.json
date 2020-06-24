@@ -9,7 +9,7 @@
             "type": "java",
             "name": "Backend-Main",
             "request": "launch",
-            "mainClass": "ch.zhaw.iwi.adimed.Main",
+            "mainClass": "ch.zhaw.iwi.devops.Main",
             "projectName": "backend",
         }
     ]

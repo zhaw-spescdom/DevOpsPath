@@ -1,9 +1,9 @@
 {
-  "name": "adimed",
+  "name": "devops",
   "version": "0.0.2",
-  "homepage": "https://github.com/zhaw-iwi/adimed/",
+  "homepage": "https://github.com/zhaw-iwi/devops/",
   "bugs": {
-    "url": "https://github.com/zhaw-iwi/adimed/issues"
+    "url": "https://github.com/zhaw-iwi/devops/issues"
   },
   "license": "ISC",
   "private": true,
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhaw-iwi/adimed.git"
+    "url": "https://github.com/zhaw-iwi/devops.git"
   },
   "engines": {
     "node": "12.13.1",

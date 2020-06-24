@@ -1,4 +1,4 @@
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
-import {AdimedAppModule} from "./app/adimed-app.module";
+import {DevOpsAppModule} from "./app/devops-app.module";
 
-platformBrowserDynamic().bootstrapModule(AdimedAppModule);
+platformBrowserDynamic().bootstrapModule(DevOpsAppModule);
