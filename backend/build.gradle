@@ -2,6 +2,7 @@ plugins {
 	id "com.github.johnrengelman.shadow" version "5.2.0"
 	id 'java'
 	id 'application'
+    id 'jacoco'
 }
 
 group = 'ch.zhaw.iwi'
@@ -19,6 +20,18 @@ repositories {
 
 task stage {
   dependsOn build
+}
+
+test {
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        csv.enabled false
+        xml.destination file("${rootProject.projectDir}/target/site/jacoco/cov.xml")
+    }
 }
 
 sourceSets {
