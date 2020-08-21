@@ -1,0 +1,8 @@
+tasks:
+  - init: eval $(gp env NG_CLI_ANALYTICS=false) && npm install
+    command: npm run start
+  - command: gp open src/app/gui-model/guimodel.ts
+ports:
+  - port: 8080
+  - port: 4200
+    onOpen: open-preview
