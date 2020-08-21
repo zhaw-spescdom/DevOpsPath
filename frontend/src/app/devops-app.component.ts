@@ -54,7 +54,7 @@ export class DevOpsAppComponent extends PathAppComponent {
             let gitpodUrl = window.location.href;
             gitpodUrl = gitpodUrl.replace("https://4200", "https://4567");
             return gitpodUrl + "services";
-        }        
+        }
         let url: string = window.location.href;
         url = url.replace("/#", "");
         if (url.endsWith("/")) {
