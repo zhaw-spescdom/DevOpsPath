@@ -3,6 +3,6 @@ tasks:
     command: npm run start
   - command: gp open frontend/src/app/gui-model/guimodel.ts
 ports:
-  - port: 8080
+  - port: 4567
   - port: 4200
     onOpen: open-preview
