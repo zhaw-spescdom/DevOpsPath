@@ -1,7 +1,7 @@
 tasks:
   - init: eval $(gp env NG_CLI_ANALYTICS=false) && cd frontend && npm install
     command: npm run start
-  - command: gp open src/app/gui-model/guimodel.ts
+  - command: gp open frontend/src/app/gui-model/guimodel.ts
 ports:
   - port: 8080
   - port: 4200
