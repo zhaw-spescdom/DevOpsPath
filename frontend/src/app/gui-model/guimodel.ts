@@ -1944,7 +1944,7 @@ export class GuiModel {
     };
 
 
-    guiModel() {
+    getGuiModel() {
         return this._guiModel;
     }
 }

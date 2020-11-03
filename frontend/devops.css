@@ -32,3 +32,8 @@
     border-color: #45AB4F !important;
     color: #45AB4F !important;
 }
+
+/* gitpod workaround */
+.breadcrumb {
+    display: none !important;
+}

@@ -42,7 +42,7 @@ export class DevOpsAppComponent extends PathAppComponent {
 
     protected getGuiModel() {
         if (this._appConfig != null) {
-            return this._appConfig.guiModel;
+            return this._appConfig.getGuiModel();
         }
         return null;
     }
