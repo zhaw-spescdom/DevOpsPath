@@ -358,7 +358,7 @@ export class GuiModel {
                             "name": "SortOrder",
                             "width": 2,
                             "min": 1,
-                            "max": 9223372036854775807,
+                            "max": 999999999999,
                             "digits": 0,
                             "required": true
                         },
@@ -399,7 +399,7 @@ export class GuiModel {
                             "name": "SortOrder",
                             "width": 2,
                             "min": 1,
-                            "max": 9223372036854775807,
+                            "max": 999999999999,
                             "digits": 0,
                             "required": true
                         },
@@ -450,7 +450,7 @@ export class GuiModel {
                             "name": "SortOrder",
                             "width": 2,
                             "min": 1,
-                            "max": 9223372036854775807,
+                            "max": 999999999999,
                             "digits": 0,
                             "required": true
                         },
@@ -536,7 +536,7 @@ export class GuiModel {
                             "name": "SortOrder",
                             "width": 2,
                             "min": 1,
-                            "max": 9223372036854775807,
+                            "max": 999999999999,
                             "digits": 0,
                             "required": true
                         },
@@ -632,7 +632,7 @@ export class GuiModel {
                             "name": "SortOrder",
                             "width": 2,
                             "min": 1,
-                            "max": 9223372036854775807,
+                            "max": 999999999999,
                             "digits": 0,
                             "required": true
                         },
@@ -742,7 +742,7 @@ export class GuiModel {
                             "name": "SortOrder",
                             "width": 2,
                             "min": 1,
-                            "max": 9223372036854775807,
+                            "max": 999999999999,
                             "digits": 0,
                             "required": true
                         },
@@ -823,7 +823,7 @@ export class GuiModel {
                             "name": "SortOrder",
                             "width": 2,
                             "min": 1,
-                            "max": 9223372036854775807,
+                            "max": 999999999999,
                             "digits": 0,
                             "required": true
                         },
@@ -942,7 +942,7 @@ export class GuiModel {
                             "name": "SortOrder",
                             "width": 2,
                             "min": 1,
-                            "max": 9223372036854775807,
+                            "max": 999999999999,
                             "digits": 0,
                             "required": true
                         },
@@ -1053,7 +1053,7 @@ export class GuiModel {
                             "name": "SortOrder",
                             "width": 2,
                             "min": 1,
-                            "max": 9223372036854775807,
+                            "max": 999999999999,
                             "digits": 0,
                             "required": true
                         },
@@ -1154,7 +1154,7 @@ export class GuiModel {
                             "name": "SortOrder",
                             "width": 2,
                             "min": 1,
-                            "max": 9223372036854775807,
+                            "max": 999999999999,
                             "digits": 0,
                             "required": true
                         },
@@ -1270,7 +1270,7 @@ export class GuiModel {
                             "name": "SortOrder",
                             "width": 2,
                             "min": 1,
-                            "max": 9223372036854775807,
+                            "max": 999999999999,
                             "digits": 0,
                             "required": true
                         },
@@ -1944,7 +1944,7 @@ export class GuiModel {
     };
 
 
-    get guiModel() {
+    guiModel() {
         return this._guiModel;
     }
 }
