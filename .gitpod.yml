@@ -4,6 +4,11 @@ tasks:
   - command: gp open frontend/src/app/gui-model/guimodel.ts
   - command: cd backend && gradle run
 ports:
-  - port: 4567
   - port: 4200
     onOpen: open-preview
+  - port: 4567
+    onOpen: ignore
+  - port: 9998
+    onOpen: ignore
+  - port: 9999
+    onOpen: ignore
