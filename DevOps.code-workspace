@@ -11,6 +11,12 @@
 		}
 	],
 	"settings": {
-		"java.configuration.updateBuildConfiguration": "interactive"
+		"java.configuration.updateBuildConfiguration": "interactive",
+		"java.import.exclusions": [
+			"/frontend",
+			"**/node_modules",
+			"**/.metadata",
+			"**/archetype-resources"
+		]
 	}
 }
