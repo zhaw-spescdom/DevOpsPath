@@ -9,8 +9,9 @@ WORKDIR /usr/src/app
 COPY . .
 
 RUN cd frontend && npm install
+RUN cd frontend && npm run build
 RUN cd backend && chmod +x gradlew
 RUN cd backend && ./gradlew test
 
-EXPOSE 4200
-CMD [ "java", "-Xmx300m -Xms300m -Xmn20m -Xss256k -XX:MaxMetaspaceSize=120m -XX:MaxDirectMemorySize=5m -Dfile.encoding=UTF-8 -cp backend/build/libs/devops-all.jar ch.zhaw.iwi.devops.Main" ]
+EXPOSE 4567
+CMD ["java", "-cp", "/usr/src/app/backend/build/libs/devops-all.jar", "ch.zhaw.iwi.devops.Main"]

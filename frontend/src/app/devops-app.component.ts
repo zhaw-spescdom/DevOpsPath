@@ -48,7 +48,7 @@ export class DevOpsAppComponent extends PathAppComponent {
     }
 
     public getBackendUrl() {
-        if (window.location.hostname.indexOf("localhost") !== -1) {
+        if (window.location.hostname.indexOf("localhost") !== -1 && window.location.port === "4200") {
             return "http://localhost:4567/services";
         } else if (window.location.hostname.indexOf("gitpod.io") !== -1) {
             let gitpodUrl = window.location.href;
