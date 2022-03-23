@@ -5,29 +5,28 @@ export class GuiModel {
         "application": {
             "title": "",
             "formList": [
+            // form added by Dominik
                 {
-                    "id": "OwnUserForm",
-                    "title": "NotImplemented",
+                    "id": "VegtableForm",
+                    "title": "Vegtable",
+                    "url": "/vegtablePage",
                     "formFieldList": [
                         {
-                            "type": "okButton",
-                            "name": "Ok"
-                        }
-                    ]
-                },
-                {
-                    "id": "NotImplementedForm",
-                    "title": "Not Implemented",
-                    "url": "/dummyform",
-                    "headerVisible": false,
-                    "footerVisible": false,
-                    "borderStyle": "None",
-                    "formFieldList": [
-                        {
-                            "id": "NotImplemented",
-                            "type": "label",
-                            "name": "NotImplementedMessage",
+                            "id": "VegtableType",
+                            "type": "text",
+                            "name": "Gemüsesorte",
+                            "newRow": true,
+                            "maxLength": 4000,
+                            "height": 4,
                             "width": 2
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
                         },
                         {
                             "type": "okButton",
@@ -1498,11 +1497,39 @@ export class GuiModel {
                         {
                             "type": "button",
                             "name": { default: "Studiengang" },
-                            "icon": "fa-file-alt",
+                            "icon": "fas fa-file-alt",
                             "color": "wet-asphalt",
                             "page": "studyProgramPage",
                             "width": 2,
                             "newRow": true,
+                        },
+                    //Kachel added by Dominik
+                        {
+                            "type": "button",
+                            "name": { default: "Gemüsesorten" },
+                            "icon": "fa-regular fa-avocado",
+                            "color": "green",
+                            "page": "vegtablePage",
+                            "width": 2,
+                            },
+                    ]
+                },
+                //Page added by Dominik
+                {
+                    "id": "vegtablePage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": { default: "Neue Gemüsesorte" },
+                            "icon": "fa-user",
+                            "color": "green",
+                            "width": 2,
+                            "form" : {
+                                "form" : "VegtableForm"
+                            }
                         },
                     ]
                 },
