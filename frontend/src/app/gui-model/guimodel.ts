@@ -34,6 +34,35 @@ export class GuiModel {
                         }
                     ]
                 },
+            // form added by Jan
+                {
+                    "id": "fruitsForm",
+                    "title": "fruits",
+                    "url": "/fruitstablePage",
+                    "formFieldList": [
+                        {
+                            "id": "fruitsType",
+                            "type": "text",
+                            "name": "Fruchtarten",
+                            "newRow": true,
+                            "maxLength": 4000,
+                            "height": 4,
+                            "width": 2
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
                 {
                     "id": "NotImplementedFormModal",
                     "title": "NotImplemented",
@@ -1512,6 +1541,15 @@ export class GuiModel {
                             "page": "vegtablePage",
                             "width": 2,
                             },
+                    //Kachel added by Jan
+                        {
+                            "type": "button",
+                            "name": { default: "Fruchtarten" },
+                            "icon": "fa-regular fa-apple",
+                            "color": "green",
+                            "page": "fruitsPage",
+                            "width": 2,
+                            },
                     ]
                 },
                 //Page added by Dominik
@@ -1529,6 +1567,25 @@ export class GuiModel {
                             "width": 2,
                             "form" : {
                                 "form" : "VegtableForm"
+                            }
+                        },
+                    ]
+                },
+                //Page added by Jan
+                {
+                    "id": "fruitsPage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": { default: "Neue Fruchtarten" },
+                            "icon": "fa-user",
+                            "color": "green",
+                            "width": 2,
+                            "form" : {
+                                "form" : "fruitsForm"
                             }
                         },
                     ]
