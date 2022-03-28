@@ -1594,7 +1594,7 @@ export class GuiModel {
             {
               type: "button",
               name: { default: "Gemüsesorten" },
-              icon: "fa-regular fa-avocado",
+              icon: "fa-regular fa-leaf",
               color: "green",
               page: "vegtablePage",
               width: 2,
@@ -1629,7 +1629,7 @@ export class GuiModel {
             {
               type: "newButton",
               name: { default: "Neue Gemüsesorte" },
-              icon: "fa-user",
+              icon: "fa-regular fa-leaf",
               color: "green",
               width: 2,
               form: {
@@ -1648,7 +1648,7 @@ export class GuiModel {
             {
               type: "newButton",
               name: { default: "Neue Fruchtarten" },
-              icon: "fa-user",
+              icon: "fa-regular fa-apple",
               color: "green",
               width: 2,
               form: {
