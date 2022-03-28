@@ -1604,7 +1604,7 @@ export class GuiModel {
               type: "button",
               name: { default: "Fruchtarten" },
               icon: "fa-regular fa-apple",
-              color: "green",
+              color: "yellow",
               page: "fruitsPage",
               width: 2,
             },
