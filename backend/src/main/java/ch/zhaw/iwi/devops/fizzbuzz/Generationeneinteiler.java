@@ -12,6 +12,9 @@ public class Generationeneinteiler {
             else if (zahl >=1981 && zahl <=1996){
                 return "Generation Y";
             }
+            else if (zahl >=1965 && zahl <=1980){
+                return "Generation X";
+            }
             return "keine bestimmte Generation";
     }
 }
