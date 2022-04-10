@@ -18,6 +18,9 @@ public class Generationeneinteiler {
             else if (zahl >=1946 && zahl <=1964){
                 return "Boomer";
             }
+            else if (zahl >=1928 && zahl <=1945){
+                return "Silent";
+            }
             return "keine bestimmte Generation";
     }
 }
