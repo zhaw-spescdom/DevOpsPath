@@ -6,6 +6,9 @@ public class Generationeneinteiler {
             if (zahl >=2011){
                 return "Generation Alpha";
             }
+            else if (zahl >=1997 && zahl <=2010){
+                return "Generation Z";
+            }
             return "keine bestimmte Generation";
     }
 }
