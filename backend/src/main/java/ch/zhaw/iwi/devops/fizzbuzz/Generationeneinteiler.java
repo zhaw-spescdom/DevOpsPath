@@ -8,6 +8,9 @@ public class Generationeneinteiler {
             }
             else if (zahl >=1997 && zahl <=2010){
                 return "Generation Z";
+            } 
+            else if (zahl >=1981 && zahl <=1996){
+                return "Generation Y";
             }
             return "keine bestimmte Generation";
     }
