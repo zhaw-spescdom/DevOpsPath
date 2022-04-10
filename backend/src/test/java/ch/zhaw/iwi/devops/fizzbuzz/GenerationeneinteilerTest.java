@@ -8,5 +8,10 @@ public class GenerationeneinteilerTest {
 		Generationeneinteiler ac = new Generationeneinteiler();
 		Assert.assertEquals("Generation Alpha", ac.generationeneinteiler(2014));
 }
+@Test
+public void generationeinteilerGenZ(){
+    Generationeneinteiler ac = new Generationeneinteiler();
+    Assert.assertEquals("Generation Z", ac.generationeneinteiler(2005));
+}
 
 }    
