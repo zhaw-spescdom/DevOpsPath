@@ -15,6 +15,9 @@ public class Generationeneinteiler {
             else if (zahl >=1965 && zahl <=1980){
                 return "Generation X";
             }
+            else if (zahl >=1946 && zahl <=1964){
+                return "Boomer";
+            }
             return "keine bestimmte Generation";
     }
 }
