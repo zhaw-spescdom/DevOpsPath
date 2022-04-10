@@ -48,4 +48,9 @@ public void generationeinteilernon(){
     Generationeneinteiler ac = new Generationeneinteiler();
     Assert.assertEquals("keine bestimmte Generation", ac.generationeneinteiler(1922));
 }
+@Test
+public void generationeinteilerZ(){
+    Generationeneinteiler ac = new Generationeneinteiler();
+    Assert.assertEquals("Generation Z", ac.generationeneinteiler(2000));
+}
 }    
