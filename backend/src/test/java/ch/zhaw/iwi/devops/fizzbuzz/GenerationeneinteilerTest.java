@@ -28,4 +28,9 @@ public void generationeinteilerBoomer(){
     Generationeneinteiler ac = new Generationeneinteiler();
     Assert.assertEquals("Boomer", ac.generationeneinteiler(1950));
 }
+@Test
+public void generationeinteilerSilent(){
+    Generationeneinteiler ac = new Generationeneinteiler();
+    Assert.assertEquals("Silent", ac.generationeneinteiler(1933));
+}
 }    
