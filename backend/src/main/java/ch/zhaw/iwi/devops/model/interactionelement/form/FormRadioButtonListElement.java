@@ -21,7 +21,6 @@ public class FormRadioButtonListElement extends FormValueFieldElement<FormRadioB
 
 	@Override
 	public FormRadioButtonListElementGuiModel toGuiModel(FormRadioButtonListElementGuiModel guiModel, InteractionStepKey currentKey) {
-		guiModel = new FormRadioButtonListElementGuiModel();
 		guiModel.setName(getName());
 		for (FormRadioButtonValue radio : radios) {
 			guiModel.addRadio(radio.getName(), radio.getValue());

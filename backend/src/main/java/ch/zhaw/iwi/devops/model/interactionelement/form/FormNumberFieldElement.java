@@ -30,7 +30,6 @@ public class FormNumberFieldElement extends FormValueFieldElement<FormNumberFiel
 		
 	@Override
 	public FormNumberFieldElementGuiModel toGuiModel(FormNumberFieldElementGuiModel guiModel, InteractionStepKey currentKey) {
-		guiModel = new FormNumberFieldElementGuiModel();
 		guiModel.setName(getName());
 		guiModel.setMin(min);
 		guiModel.setMax(max);

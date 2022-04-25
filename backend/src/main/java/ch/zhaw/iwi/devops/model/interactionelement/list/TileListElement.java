@@ -39,7 +39,6 @@ public class TileListElement extends InteractionElement<ListElementGuiModel> {
 		if (getNextInteractionStep() != null) {
 			nextInteractionStepKey = getNextInteractionStep().getKey();
 		}
-		guiModel = new ListElementGuiModel();
 		guiModel.setType("list");
 		currentKey.setNextInteractionStepKey(nextInteractionStepKey);
 		currentKey.setInteractionElementKey(getKey());

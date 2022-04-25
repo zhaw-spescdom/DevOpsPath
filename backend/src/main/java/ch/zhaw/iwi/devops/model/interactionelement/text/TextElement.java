@@ -30,7 +30,6 @@ public class TextElement extends InteractionElement<TextElementGuiModel> {
 
 	@Override
 	public TextElementGuiModel toGuiModel(TextElementGuiModel guiModel, InteractionStepKey currentKey) {
-		guiModel = new TextElementGuiModel();
 		guiModel.setType("pageLabel");
 		guiModel.setValue("<h4>" + text + "</h4>");
 		return super.toGuiModel(guiModel, currentKey);
