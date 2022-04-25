@@ -20,7 +20,6 @@ public class FormTextFieldElement extends FormValueFieldElement<FormTextFieldEle
 
 	@Override
 	public FormTextFieldElementGuiModel toGuiModel(FormTextFieldElementGuiModel guiModel, InteractionStepKey currentKey) {
-		guiModel = new FormTextFieldElementGuiModel();
 		guiModel.setName(getName());
 		guiModel.setHeight(height);
 		return super.toGuiModel(guiModel, currentKey);

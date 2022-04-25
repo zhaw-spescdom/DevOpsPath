@@ -22,7 +22,6 @@ public class FormSliderFieldElement extends FormValueFieldElement<FormSliderFiel
 			
 	@Override
 	public FormSliderFieldElementGuiModel toGuiModel(FormSliderFieldElementGuiModel guiModel, InteractionStepKey currentKey) {
-		guiModel = new FormSliderFieldElementGuiModel();
 		guiModel.setName(getName());
 		guiModel.setMin(min);
 		guiModel.setMax(max);
