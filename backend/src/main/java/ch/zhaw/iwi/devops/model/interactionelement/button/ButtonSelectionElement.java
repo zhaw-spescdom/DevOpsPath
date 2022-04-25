@@ -111,7 +111,6 @@ public class ButtonSelectionElement extends InteractionElement<ButtonSelectionEl
 
 	@Override
 	public ButtonSelectionElementGuiModel toGuiModel(ButtonSelectionElementGuiModel guiModel, InteractionStepKey currentKey) {
-		guiModel = new ButtonSelectionElementGuiModel();
 		guiModel.setUrl("/questionnaireResponse/" + currentKey.getQuestionnaireResponseKey() + "/buttonSelectionElemement/" + getKey() + "/buttonSelectionElementValue");
 		guiModel.setColor(color);
 		guiModel.setIcon(icon);

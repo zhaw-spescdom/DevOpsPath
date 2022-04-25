@@ -21,7 +21,6 @@ public class FormFileUploadElement extends FormValueFieldElement<FormFileUploadE
 
 	@Override
 	public FormFileUploadElementGuiModel toGuiModel(FormFileUploadElementGuiModel guiModel, InteractionStepKey currentKey) {
-		guiModel = new FormFileUploadElementGuiModel();
 		for (FormFileType fileType : acceptedFileTypes) {
 			if (fileType.getFileType().startsWith(".")) {
 				guiModel.getAcceptedFileTypes().add(fileType.getFileType());

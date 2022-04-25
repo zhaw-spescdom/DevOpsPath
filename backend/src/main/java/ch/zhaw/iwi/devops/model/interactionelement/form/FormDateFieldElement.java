@@ -10,7 +10,7 @@ public class FormDateFieldElement extends FormValueFieldElement<FormDateFieldEle
 
 	@Override
 	public FormDateFieldElementGuiModel toGuiModel(FormDateFieldElementGuiModel guiModel, InteractionStepKey currentKey) {
-		guiModel = new FormDateFieldElementGuiModel();
+
 		return super.toGuiModel(guiModel, currentKey);
 	}
 	

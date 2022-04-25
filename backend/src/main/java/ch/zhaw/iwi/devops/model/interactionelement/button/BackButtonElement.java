@@ -16,7 +16,7 @@ public class BackButtonElement extends InteractionElement<BackButtonElementGuiMo
 
 	@Override
 	public BackButtonElementGuiModel toGuiModel(BackButtonElementGuiModel guiModel, InteractionStepKey currentKey) {
-		guiModel = new BackButtonElementGuiModel();
+		
 		guiModel.setType("backbutton");
 		return super.toGuiModel(guiModel, currentKey);
 	}

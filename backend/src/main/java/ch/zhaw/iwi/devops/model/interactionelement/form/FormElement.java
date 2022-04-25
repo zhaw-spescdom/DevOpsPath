@@ -12,7 +12,7 @@ public class FormElement extends InteractionElement<FormElementGuiModel> {
 
 	@Override
 	public FormElementGuiModel toGuiModel(FormElementGuiModel guiModel, InteractionStepKey currentKey) {
-		guiModel = new FormElementGuiModel();
+	
 		guiModel.setType("inlineForm");
 		guiModel.setForm("InteractionInlineForm");
 		currentKey.setNextInteractionStepKey(getNextInteractionStep() != null ? getNextInteractionStep().getKey() : null);

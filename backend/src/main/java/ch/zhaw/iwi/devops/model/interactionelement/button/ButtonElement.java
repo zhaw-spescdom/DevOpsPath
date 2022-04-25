@@ -104,7 +104,6 @@ public class ButtonElement extends InteractionElement<ButtonElementGuiModel> {
 	
 	@Override
 	public ButtonElementGuiModel toGuiModel(ButtonElementGuiModel guiModel, InteractionStepKey currentKey) {
-		guiModel = new ButtonElementGuiModel();
 		guiModel.setColor(color);
 		guiModel.setIcon(icon);
 		guiModel.getName().setAll(name);
