@@ -1,7 +1,8 @@
 package ch.zhaw.iwi.devops.fizzbuzz;
-
 public class Generationeneinteiler {
     public String generationeneinteiler(int zahl){
+            int alter = 2022 - zahl;
+            System.out.println("Du bist "+alter+" Jahre alt");
             if (zahl >=2011){
                 return "Generation Alpha";
             }
@@ -19,7 +20,7 @@ public class Generationeneinteiler {
             }
             else if (zahl >=1928 && zahl <=1945){
                 return "Silent";
-            }
+            }    
             return "keine bestimmte Generation";
-    }
+        }   
 }
