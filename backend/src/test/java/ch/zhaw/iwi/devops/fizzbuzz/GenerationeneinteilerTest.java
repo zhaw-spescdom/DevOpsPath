@@ -56,7 +56,7 @@ public void generationeinteilerZ1(){
 @Test
 public void generationeinteilerZ2(){
     Generationeneinteiler ac = new Generationeneinteiler();
-    Assert.assertEquals("Generation Z", ac.generationeneinteiler(1957));
+    Assert.assertEquals("Generation Z", ac.generationeneinteiler(2002));
 }
 @Test
 public void generationeinteilerZ(){
