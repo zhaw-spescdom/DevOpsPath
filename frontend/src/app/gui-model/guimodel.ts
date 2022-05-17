@@ -1590,7 +1590,7 @@ export class GuiModel {
               width: 2,
               newRow: true,
             },
-            //Kachel added by Dominik
+            // Kachel added by Dominik
             {
               type: "button",
               name: { default: "Gemüsesorten" },
@@ -1599,7 +1599,7 @@ export class GuiModel {
               page: "vegtablePage",
               width: 2,
             },
-            //Kachel added by Jan
+            // Kachel added by Jan
             {
               type: "button",
               name: { default: "Fruchtarten" },
@@ -1608,7 +1608,7 @@ export class GuiModel {
               page: "fruitsPage",
               width: 2,
             },
-            //Kachel added by Adrian
+            // Kachel added by Adrian
             {
                 type: "button",
                 name: { default: "Schokoladearten" },
@@ -1619,7 +1619,7 @@ export class GuiModel {
               },
           ],
         },
-        //Page added by Dominik
+        // Page added by Dominik
         {
           id: "vegtablePage",
           elementList: [
@@ -1638,7 +1638,7 @@ export class GuiModel {
             },
           ],
         },
-        //Page added by Jan
+        // Page added by Jan
         {
           id: "fruitsPage",
           elementList: [
@@ -1657,7 +1657,7 @@ export class GuiModel {
             },
           ],
         },
-        //Page added by Adrian
+        // Page added by Adrian
         {
             id: "chocolatePage",
             elementList: [
