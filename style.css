@@ -72,6 +72,7 @@ body {
   display: table-cell;
   padding: 0 8%;
   vertical-align: middle;
+
 }
 #main .slide .content h1 {
   padding: 0;
@@ -81,4 +82,11 @@ body {
   color: white;
   font-size: 10vh;
   text-shadow: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.3);
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
